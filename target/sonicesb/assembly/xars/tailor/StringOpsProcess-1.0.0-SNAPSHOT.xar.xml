@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TailoringMaps xmlns="http://www.sonicsw.com/sonicxq" version="TailorMap8.0">
+  <ProcessMaps>
+    <ProcessMap QoS="BEST_EFFORT" name="strSplit" trackingLevel="0" timeToLive="0"/>
+  </ProcessMaps>
+  <ServiceMaps>
+    <ServiceMap typeRef="StringOpsService" name="StringOpsServiceInstance" entry_ref="StringOpsServiceInstance.Entry">
+      <paramMap>
+        <StringParam name="verbose">@svc.StringOpsServiceInstance.verbose@</StringParam>
+        <StringParam name="com.sonicsw.xq.service.executor.POJOExecutor.delegate">@svc.StringOpsServiceInstance.com.sonicsw.xq.service.executor.POJOExecutor.delegate@</StringParam>
+      </paramMap>
+    </ServiceMap>
+  </ServiceMaps>
+  <EndpointMaps/>
+  <ConnectionMaps>
+    <ConnectionMap typeRef="JMSType" name="jms_defaultConnection">
+      <paramMap>
+        <StringParam name="url">@con.jms_defaultConnection.url@</StringParam>
+        <StringParam name="user">@con.jms_defaultConnection.user@</StringParam>
+        <StringParam name="password">@con.jms_defaultConnection.password@</StringParam>
+        <StringParam name="SSL_CA_CERTIFICATES_DIR">@con.jms_defaultConnection.SSL_CA_CERTIFICATES_DIR@</StringParam>
+        <StringParam name="SSL_CERTIFICATE_CHAIN">@con.jms_defaultConnection.SSL_CERTIFICATE_CHAIN@</StringParam>
+        <StringParam name="SSL_PRIVATE_KEY">@con.jms_defaultConnection.SSL_PRIVATE_KEY@</StringParam>
+        <StringParam name="SSL_PRIVATE_KEY_PASSWORD">@con.jms_defaultConnection.SSL_PRIVATE_KEY_PASSWORD@</StringParam>
+        <StringParam name="SSL_CERTIFICATE_CHAIN_FORM">@con.jms_defaultConnection.SSL_CERTIFICATE_CHAIN_FORM@</StringParam>
+        <StringParam name="SSL_CIPHER_SUITES">@con.jms_defaultConnection.SSL_CIPHER_SUITES@</StringParam>
+        <StringParam name="SSL_PROVIDER_CLASS">@con.jms_defaultConnection.SSL_PROVIDER_CLASS@</StringParam>
+        <StringParam name="SSL_JSSE_KEY_STORE_TYPE">@con.jms_defaultConnection.SSL_JSSE_KEY_STORE_TYPE@</StringParam>
+        <StringParam name="SSL_JSSE_KEY_STORE_LOCATION">@con.jms_defaultConnection.SSL_JSSE_KEY_STORE_LOCATION@</StringParam>
+        <StringParam name="SSL_JSSE_KEY_STORE_PASSWORD">@con.jms_defaultConnection.SSL_JSSE_KEY_STORE_PASSWORD@</StringParam>
+        <StringParam name="SSL_JSSE_KEY_STORE_KEY_ALIAS">@con.jms_defaultConnection.SSL_JSSE_KEY_STORE_KEY_ALIAS@</StringParam>
+        <StringParam name="SSL_JSSE_KEY_STORE_KEY_PASSWORD">@con.jms_defaultConnection.SSL_JSSE_KEY_STORE_KEY_PASSWORD@</StringParam>
+        <StringParam name="SSL_JSSE_TRUST_STORE_TYPE">@con.jms_defaultConnection.SSL_JSSE_TRUST_STORE_TYPE@</StringParam>
+        <StringParam name="SSL_JSSE_TRUST_STORE_LOCATION">@con.jms_defaultConnection.SSL_JSSE_TRUST_STORE_LOCATION@</StringParam>
+        <StringParam name="SSL_JSSE_TRUST_STORE_PASSWORD">@con.jms_defaultConnection.SSL_JSSE_TRUST_STORE_PASSWORD@</StringParam>
+        <StringParam name="SSL_JSSE_TRUST_MANAGER">@con.jms_defaultConnection.SSL_JSSE_TRUST_MANAGER@</StringParam>
+      </paramMap>
+    </ConnectionMap>
+  </ConnectionMaps>
+  <StringReplaceMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <stringReplaceMap updatedName="sonicfs:///ESBArtifacts/com/aurea/cx/messenger/example/StringOpsService/1.1-SNAPSHOT" name="sonicfs:///workspace/StringOpsService/target/generated-sources/annotations/sonicesb"/>
+    <stringReplaceMap updatedName="sonicfs:///ESBResources/com/aurea/cx/messenger/example/StringOpsService/1.1-SNAPSHOT/StringOpsService-1.1-SNAPSHOT" name="sonicfs:///workspace/StringOpsService/lib/StringOpsService"/>
+    <stringReplaceMap updatedName="sonicfs:///ESBResources/com/aurea/cx/messenger/example/StringOpsProcess/1.0.0-SNAPSHOT/StringOpsProcess-1.0.0-SNAPSHOT" name="sonicfs:///workspace/StringOpsProcess/lib/StringOpsProcess"/>
+    <stringReplaceMap updatedName="sonicfs:///ESBArtifacts/com/aurea/cx/messenger/example/StringOpsProcess/1.0.0-SNAPSHOT" name="sonicfs:///workspace/StringOpsProcess/src/main/sonicesb"/>
+  </StringReplaceMaps>
+</TailoringMaps>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xq:process name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Aurea/Sonic17SP4/ESB10.0/schema/process.xsd">
+    <xq:exitEndpoint_list>
+        <xq:exitEndpoint endpoint_ref="REPLY_TO"/>
+    </xq:exitEndpoint_list>
+    <xq:faultEndpoint endpoint_ref="REPLY_TO"/>
+    <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
+    <xq:itinerary>
+        <xq:step description="Split string" endpoint_ref="StringOpsServiceInstance" name="Service 1" type="SERVICE">
+            <xq:params>
+                <xq:stringParam name="operationId">StringOpsService.split</xq:stringParam>
+            </xq:params>
+            <xq:messageMapping>
+                <xq:mapInput>
+                    <xq:rule source="${esbmsg.parts[0].content}" target="${esbdl.input['str']}"/>
+                    <xq:rule source=":" target="${esbdl.input['delimiter']}"/>
+                </xq:mapInput>
+                <xq:mapOutput>
+                    <xq:rule source="${esbdl.output['output'].each}" target="${esbmsg.parts[xq:newPart(xq:strConcat('output', null, mapctx.sourceCursorIndex), 'text/plain')]}"/>
+                </xq:mapOutput>
+            </xq:messageMapping>
+        </xq:step>
+        <xq:exit name="Exit 1"/>
+    </xq:itinerary>
+    <xq:trackingDetails trackingLevel="0">
+        <xq:eventEndpoint endpoint_ref="dev.Tracking" type="ENDPOINT"/>
+        <xq:idGenerator class="com.sonicsw.xqimpl.service.accessor.ScriptEvaluator"/>
+    </xq:trackingDetails>
+    <xq:interface xmlns:xq="http://www.sonicsw.com/sonicxq">
+        <xq:operation xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+            <xq:input name="Input">
+                <xq:parameter collection="false" name="DefaultInput" type="xsd:anyType">
+                    <xq:esbBinding>
+                        <xq:part contentId="name"/>
+                    </xq:esbBinding>
+                </xq:parameter>
+            </xq:input>
+            <xq:output name="Output">
+                <xq:parameter collection="false" name="DefaultOutput" type="xsd:anyType">
+                    <xq:esbBinding>
+                        <xq:part contentId="name"/>
+                    </xq:esbBinding>
+                </xq:parameter>
+            </xq:output>
+        </xq:operation>
+    </xq:interface>
+</xq:process>
