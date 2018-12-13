@@ -6,7 +6,7 @@
   <xq:faultEndpoint endpoint_ref="REPLY_TO" type="REPLY_TO"/>
   <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
   <xq:itinerary>
-    <xq:step name="Service 1" description="Split string" type="SERVICE" endpoint_ref="StringOpsServiceInstance">
+    <xq:step name="SplitService" description="Split string" type="SERVICE" endpoint_ref="StringOpsServiceInstance">
       <xq:params>
         <xq:stringParam name="operationId">StringOpsService.split</xq:stringParam>
       </xq:params>
