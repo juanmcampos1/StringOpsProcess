@@ -1,12 +1,3 @@
-<xq:service name="StringOpsServiceInstance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="StringOpsService" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Aurea/Sonic/ESB10.0/schema/service.xsd">
+<xq:service name="StringOpsServiceInstance" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="StringOpsService" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/AlidaPrograms/Demo/Aurea2018/ESB10.0/schema/service.xsd">
   <xq:entry_ref>StringOpsServiceInstance.Entry</xq:entry_ref>
-  <xq:exitEndpoint_list>
-    <xq:exitEndpoint endpoint_ref="REPLY_TO"/>
-  </xq:exitEndpoint_list>
-  <xq:faultEndpoint endpoint_ref="REPLY_TO"/>
-  <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
-  <xq:params>
-    <xq:stringParam name="com.sonicsw.xq.service.executor.POJOExecutor.delegate">com.aurea.cx.messenger.example.StringOpsService.StringOpsService</xq:stringParam>
-    <xq:stringParam name="verbose">false</xq:stringParam>
-  </xq:params>
 </xq:service>

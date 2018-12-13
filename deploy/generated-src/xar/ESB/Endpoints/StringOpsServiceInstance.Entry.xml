@@ -1,4 +1,4 @@
-<xq:endpoint qualityOfService="BEST_EFFORT" name="StringOpsServiceInstance.Entry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="JMSType" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Aurea/Sonic/ESB10.0/schema/endpoint.xsd" connection_ref="jms_defaultConnection">
+<xq:endpoint qualityOfService="BEST_EFFORT" name="StringOpsServiceInstance.Entry" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="JMSType" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/AlidaPrograms/Demo/Aurea2018/ESB10.0/schema/endpoint.xsd" connection_ref="jms_defaultConnection">
   <xq:params>
     <xq:stringParam name="concurrentDurableSubscriber">false</xq:stringParam>
     <xq:stringParam name="destination">StringOpsServiceInstance.Entry</xq:stringParam>

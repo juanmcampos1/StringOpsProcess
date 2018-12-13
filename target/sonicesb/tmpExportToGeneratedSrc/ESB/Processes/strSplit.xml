@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xq:process name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Aurea/Sonic/ESB10.0/schema/process.xsd">
+<xq:process name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/AlidaPrograms/Demo/Aurea2018/ESB10.0/schema/process.xsd">
     <xq:exitEndpoint_list>
         <xq:exitEndpoint endpoint_ref="REPLY_TO"/>
     </xq:exitEndpoint_list>
     <xq:faultEndpoint endpoint_ref="REPLY_TO"/>
     <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
     <xq:itinerary>
-        <xq:step description="Split string" endpoint_ref="StringOpsServiceInstance" name="SplitService" type="SERVICE">
+        <xq:step description="Split string" endpoint_ref="StringOpsServiceInstance" name="SplitService1" type="SERVICE">
             <xq:params>
                 <xq:stringParam name="operationId">StringOpsService.split</xq:stringParam>
             </xq:params>
