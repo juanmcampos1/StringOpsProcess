@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xq:process xmlns:wsis="http://www.sonicsw.com/esb/service/invocation" xmlns:xq="http://www.sonicsw.com/sonicxq" name="strSplit" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0">
+<xq:process xmlns:wsis="http://www.sonicsw.com/esb/service/invocation" xmlns:xq="http://www.sonicsw.com/sonicxq" name="strSplit" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" entry_ref="strSplit.Entry">
   <xq:exitEndpoint_list>
-    <xq:exitEndpoint endpoint_ref="REPLY_TO" type="REPLY_TO"/>
+    <xq:exitEndpoint endpoint_ref="strSplit.Exit" type="ENDPOINT"/>
   </xq:exitEndpoint_list>
   <xq:faultEndpoint endpoint_ref="REPLY_TO" type="REPLY_TO"/>
   <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
