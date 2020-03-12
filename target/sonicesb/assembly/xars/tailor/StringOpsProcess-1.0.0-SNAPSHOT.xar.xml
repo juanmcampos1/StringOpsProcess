@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TailoringMaps xmlns="http://www.sonicsw.com/sonicxq" version="TailorMap8.0">
   <ProcessMaps>
-    <ProcessMap QoS="BEST_EFFORT" name="strSplit" trackingLevel="0" timeToLive="0"/>
+    <ProcessMap QoS="BEST_EFFORT" name="strSplit" trackingLevel="0" timeToLive="0" entry_ref="strSplit.Entry"/>
   </ProcessMaps>
   <ServiceMaps>
     <ServiceMap typeRef="StringOpsService" name="StringOpsServiceInstance" entry_ref="StringOpsServiceInstance.Entry">
@@ -38,8 +38,8 @@
     </ConnectionMap>
   </ConnectionMaps>
   <StringReplaceMaps xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <stringReplaceMap updatedName="sonicfs:///ESBArtifacts/com/aurea/cx/messenger/example/StringOpsService/1.1-SNAPSHOT" name="sonicfs:///workspace/StringOpsService/target/generated-sources/annotations/sonicesb"/>
-    <stringReplaceMap updatedName="sonicfs:///ESBResources/com/aurea/cx/messenger/example/StringOpsService/1.1-SNAPSHOT/StringOpsService-1.1-SNAPSHOT" name="sonicfs:///workspace/StringOpsService/lib/StringOpsService"/>
+    <stringReplaceMap name="sonicfs:///workspace/StringOpsService/target/generated-sources/annotations/sonicesb" updatedName="sonicfs:///ESBArtifacts/com/aurea/cx/messenger/example/StringOpsService/1.1-SNAPSHOT"/>
+    <stringReplaceMap name="sonicfs:///workspace/StringOpsService/lib/StringOpsService" updatedName="sonicfs:///ESBResources/com/aurea/cx/messenger/example/StringOpsService/1.1-SNAPSHOT/StringOpsService-1.1-SNAPSHOT"/>
     <stringReplaceMap updatedName="sonicfs:///ESBResources/com/aurea/cx/messenger/example/StringOpsProcess/1.0.0-SNAPSHOT/StringOpsProcess-1.0.0-SNAPSHOT" name="sonicfs:///workspace/StringOpsProcess/lib/StringOpsProcess"/>
     <stringReplaceMap updatedName="sonicfs:///ESBArtifacts/com/aurea/cx/messenger/example/StringOpsProcess/1.0.0-SNAPSHOT" name="sonicfs:///workspace/StringOpsProcess/src/main/sonicesb"/>
   </StringReplaceMaps>

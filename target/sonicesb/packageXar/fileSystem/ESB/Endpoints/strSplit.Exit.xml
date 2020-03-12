@@ -1,0 +1,17 @@
+<xq:endpoint qualityOfService="BEST_EFFORT" name="strSplit.Exit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="JMSType" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531561533976905/sonicesb-maven-plugin/ESB2015/schema/endpoint.xsd" connection_ref="jms_defaultConnection">
+  <xq:params>
+    <xq:stringParam name="concurrentDurableSubscriber"/>
+    <xq:stringParam name="destination">strSplit.Exit</xq:stringParam>
+    <xq:stringParam name="durableSubscriberName"/>
+    <xq:stringParam name="flowToDisk"/>
+    <xq:stringParam name="jmsPriority">-1</xq:stringParam>
+    <xq:stringParam name="messageSelector"/>
+    <xq:stringParam name="prefetchCount"/>
+    <xq:stringParam name="prefetchThreshold"/>
+    <xq:stringParam name="priority">4</xq:stringParam>
+    <xq:stringParam name="sendTimeout"/>
+    <xq:stringParam name="sharedSubscriptions"/>
+    <xq:stringParam name="timeToLive"/>
+    <xq:stringParam name="type">TOPIC</xq:stringParam>
+  </xq:params>
+</xq:endpoint>

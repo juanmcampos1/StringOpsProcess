@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xq:process name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/JUANM~1.WIN/AppData/Local/Temp/3/mvnesbplugin5649275531523322693219/sonicesb-maven-plugin/ESB2015/schema/process.xsd">
+<xq:process entry_ref="strSplit.Entry" name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531561533976905/sonicesb-maven-plugin/ESB2015/schema/process.xsd">
     <xq:exitEndpoint_list>
-        <xq:exitEndpoint endpoint_ref="REPLY_TO"/>
+        <xq:exitEndpoint endpoint_ref="strSplit.Exit" type="ENDPOINT"/>
     </xq:exitEndpoint_list>
     <xq:faultEndpoint endpoint_ref="REPLY_TO"/>
     <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
     <xq:itinerary>
-        <xq:step description="Split string" endpoint_ref="StringOpsServiceInstance" name="Service 1" type="SERVICE">
+        <xq:step description="Split string" endpoint_ref="StringOpsServiceInstance" name="SplitService1" type="SERVICE">
             <xq:params>
                 <xq:stringParam name="operationId">StringOpsService.split</xq:stringParam>
             </xq:params>
