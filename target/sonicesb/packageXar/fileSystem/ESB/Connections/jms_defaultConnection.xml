@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xq:connection name="jms_defaultConnection" type_ref="JMSType" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531584128578575/sonicesb-maven-plugin/ESB2015/schema/connection.xsd">
+<xq:connection name="jms_defaultConnection" type_ref="JMSType" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531584485500568/sonicesb-maven-plugin/ESB2015/schema/connection.xsd">
     <xq:params>
         <xq:stringParam name="SSL_PRIVATE_KEY">C:\Aurea\Sonic\MQ10.0/certs/clientKey.pkcs8</xq:stringParam>
         <xq:stringParam name="SSL_PRIVATE_KEY_PASSWORD">password</xq:stringParam>

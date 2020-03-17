@@ -6,15 +6,11 @@
   <xq:faultEndpoint endpoint_ref="REPLY_TO" type="REPLY_TO"/>
   <xq:rejectEndpoint endpoint_ref="dev.RME" type="ENDPOINT"/>
   <xq:itinerary>
-    <xq:step name="SplitService1" description="Split string" type="SERVICE" endpoint_ref="StringOpsServiceInstance">
+    <xq:step name="Service 1" description="Split string" type="SERVICE" endpoint_ref="StringOpsServiceInstance">
       <xq:params>
         <xq:stringParam name="operationId">StringOpsService.split</xq:stringParam>
       </xq:params>
       <xq:messageMapping>
-        <xq:mapInput>
-          <xq:rule source="${esbmsg.parts[0].content}" target="${esbdl.input['str']}"/>
-          <xq:rule source=":" target="${esbdl.input['delimiter']}"/>
-        </xq:mapInput>
         <xq:mapOutput>
           <xq:rule source="${esbdl.output['output'].each}" target="${esbmsg.parts[xq:newPart(xq:strConcat('output', null, mapctx.sourceCursorIndex), 'text/plain')]}"/>
         </xq:mapOutput>

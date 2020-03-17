@@ -1,4 +1,4 @@
-<xq:endpoint qualityOfService="BEST_EFFORT" name="strSplit.Exit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="JMSType" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531584128578575/sonicesb-maven-plugin/ESB2015/schema/endpoint.xsd" connection_ref="jms_defaultConnection">
+<xq:endpoint qualityOfService="BEST_EFFORT" name="strSplit.Exit" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xq="http://www.sonicsw.com/sonicxq" type_ref="JMSType" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531584485500568/sonicesb-maven-plugin/ESB2015/schema/endpoint.xsd" connection_ref="jms_defaultConnection">
   <xq:params>
     <xq:stringParam name="concurrentDurableSubscriber">true</xq:stringParam>
     <xq:stringParam name="destination">strSplit.Exit</xq:stringParam>

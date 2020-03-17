@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>com.aurea.cx.messenger.example</groupId>
 			<artifactId>StringOpsService</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<version>2.0-SNAPSHOT</version>
 			<type>esbstyp</type>
 		</dependency>
 	</dependencies>
