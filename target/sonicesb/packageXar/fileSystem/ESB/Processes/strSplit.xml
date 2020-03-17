@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xq:process entry_ref="strSplit.Entry" name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531561533976905/sonicesb-maven-plugin/ESB2015/schema/process.xsd">
+<xq:process entry_ref="strSplit.Entry" name="strSplit" preserveMessageOrder="false" processModelVersion="3.0" qualityOfService="BEST_EFFORT" timeToLive="0" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531584128578575/sonicesb-maven-plugin/ESB2015/schema/process.xsd">
     <xq:exitEndpoint_list>
         <xq:exitEndpoint endpoint_ref="strSplit.Exit" type="ENDPOINT"/>
     </xq:exitEndpoint_list>

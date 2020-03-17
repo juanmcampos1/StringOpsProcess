@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xq:connection name="jms_defaultConnection" type_ref="JMSType" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531561533976905/sonicesb-maven-plugin/ESB2015/schema/connection.xsd">
+<xq:connection name="jms_defaultConnection" type_ref="JMSType" xmlns:xq="http://www.sonicsw.com/sonicxq" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sonicsw.com/sonicxq file:///C:/Users/Demo/AppData/Local/Temp/mvnesbplugin5649275531584128578575/sonicesb-maven-plugin/ESB2015/schema/connection.xsd">
     <xq:params>
-        <xq:stringParam name="SSL_PRIVATE_KEY">C:\CXMessenger\Sonic\MQ10.0/certs/clientKey.pkcs8</xq:stringParam>
+        <xq:stringParam name="SSL_PRIVATE_KEY">C:\Aurea\Sonic\MQ10.0/certs/clientKey.pkcs8</xq:stringParam>
         <xq:stringParam name="SSL_PRIVATE_KEY_PASSWORD">password</xq:stringParam>
+        <xq:stringParam name="MAX_SESSIONS_BEST_EFFORT_DISCARDABLE_POOL">3</xq:stringParam>
         <xq:stringParam name="password">Administrator</xq:stringParam>
         <xq:stringParam name="url">tcp://Demo-PC:2506</xq:stringParam>
         <xq:stringParam name="SSL_CERTIFICATE_CHAIN_FORM">PKCS7</xq:stringParam>
         <xq:stringParam name="MAX_SESSIONS_AT_LEAST_ONCE_FAST_POOL">3</xq:stringParam>
-        <xq:stringParam name="SSL_CERTIFICATE_CHAIN">C:\CXMessenger\Sonic\MQ10.0/certs/client.p7c</xq:stringParam>
-        <xq:stringParam name="SSL_CA_CERTIFICATES_DIR">C:\CXMessenger\Sonic\MQ10.0/certs/CA</xq:stringParam>
+        <xq:stringParam name="SSL_CERTIFICATE_CHAIN">C:\Aurea\Sonic\MQ10.0/certs/client.p7c</xq:stringParam>
+        <xq:stringParam name="SSL_CA_CERTIFICATES_DIR">C:\Aurea\Sonic\MQ10.0/certs/CA</xq:stringParam>
         <xq:stringParam name="ackMode">3</xq:stringParam>
         <xq:stringParam name="SSL_CIPHER_SUITES">SSL_RSA_WITH_3DES_EDE_CBC_SHA</xq:stringParam>
         <xq:stringParam name="MAX_SESSIONS_BEST_EFFORT_POOL">3</xq:stringParam>
